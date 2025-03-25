@@ -7,7 +7,7 @@ st.title("Gender Prediction")
 # load the model
 @st.cache_resource
 def load_model():
-    return joblib.load("naive_bayes_gender_model_US.py")
+    return joblib.load("naive_bayes_gender_model_US.pkl")
 
 model = load_model()
 
